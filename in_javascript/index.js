@@ -1,11 +1,15 @@
 //파라미터
-function welcome(name) {
-    console.log("안녕하세요 " + name + "님!");
+function teraToGiga(volume) {
+    console.log(volume + "TB는");
+    console.log(volume * 1024 + "GB 입니다.");
 };
 
-welcome("코드잇");
-welcome("메리메리");
-welcome("코딩");
+function teraToMega(volume) {
+    console.log(volume + "TB는");
+    console.log(volume * 1024 * 1024 + "MB 입니다.");
+};
 
-/*함수 선언 부분에서 함수 이름 바로 뒤에 오는 소괄호 내부에 파라미터를 작성하고
-함수 내부에서 파라미터를 변수처럼 사용하게 되면 함수를 호출할 때 소괄호 안에 입력한 값이 파라미터에 전달되는 개념*/
+// TB -> GB 테스트
+teraToGiga(2);
+// TB -> MB 테스트
+teraToMega(2);
