@@ -1,26 +1,18 @@
-//return
-function getTwo() {
-    return 2; //return이라는 키워드 다음에 되돌려 줄 값을 입력->이때 이 값을 '반환 값' 혹은 '리턴 값'이라고 부름 -> 이렇게 리턴 값이 작성되면 함수를 호출하는 자리에 리턴 값이 전달
+// 여기에 코드를 입력해 주세요.
+function interestCalculator(myMoney, saveTerm, interestRate) {
+    return myMoney * saveTerm * interestRate / 100;
 };
 
-console.log(getTwo()); //getTwo 함수를 호출했으니까 이 함수에 리턴 값인 2가 전달이 돼서 결과적으로 console.log(2)와 동일한 의미를 가진 코드가 된다.
-console.log(2);
+// 조건 입력 테스트
+let myMoney = 3650000; // 맡긴 금액 (원)
+let saveTerm = 1; // 맡기는 기간 (년)
+let interestRate = 4; // 이자율 (%)
 
-//return
-function getTwice(number) {
-    return number * 2;
-};
+// 수령액 계산 테스트
+let myInterest = interestCalculator(myMoney, saveTerm, interestRate);
+let totalMoney = myMoney + myInterest;
 
-console.log(getTwice(5)); //숫자 5가 파라미터로 전달
-console.log(10);
-
-//return
-function getTwice(number) {
-    return number * 2;
-};
-
-let x = getTwice(5); //10
-let y = getTwice(2); //4
-
-console.log(x * y);
-console.log(40);
+// 출력 테스트
+console.log('맡긴 금액은 ' + myMoney + '원 입니다.');
+console.log('이자는 ' + myInterest + '원 입니다.');
+console.log('최종 받을 금액은 ' + totalMoney + '원 입니다.');
