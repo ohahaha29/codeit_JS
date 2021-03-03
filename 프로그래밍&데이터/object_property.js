@@ -59,7 +59,7 @@ console.log(codeit.name !== undefined);
 // 'propertyName' in object (in 연산자)
 console.log('name' in codeit);
 
-// 객체와 프로퍼티 실습 - 영어 단어장
+// 객체와 프로퍼티 실습 - 영어 단어장(1)
 let myVoca = {
 	function: '함수',
 	variable: '변수',
@@ -72,3 +72,33 @@ console.log(myVoca);
 console.log(myVoca.local);
 console.log(myVoca.constant);
 console.log(myVoca.function);
+
+
+// 객체와 프로퍼티 실습 - 영어 단어장(2)
+let myVoca = {
+    function: '함수',
+    variable: '변수',
+    constant: '상수',
+    local: '지역의',
+    global: '전반적인'
+}
+
+// 이미 외운 단어 3개를 삭제
+delete myVoca.function;
+delete myVoca.constant;
+delete myVoca.local;
+
+console.log(myVoca);
+console.log(myVoca.constant);
+
+// 오늘 외울 단어 4개를 추가
+myVoca.extend = '확장하다';
+myVoca.export = '내보내다';
+myVoca.import = '불러오다';
+myVoca['default value'] = '기본값';
+
+console.log(myVoca);
+console.log(myVoca.export);
+
+// 3. default value의 뜻을 출력
+console.log(myVoca['default value']);
