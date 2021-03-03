@@ -42,6 +42,23 @@ console.log(codeit.bestCourse.title);
 console.log(codeit.bestCourse['title']);
 
 
+// 객체의 property 수정하는 방법
+codeit.name = 'codeit';
+console.log(codeit.name);
+
+// 객체의 property 추가하는 방법
+codeit.ceo = '강아지';
+console.log(codeit.ceo);
+
+// 객체의 property 삭제하는 방법
+delete codeit.worstCourse;
+console.log(codeit.worstCourse);
+
+// 객체의 property 존재여부 확인 -> 불린 형태로 값을 리턴
+console.log(codeit.name !== undefined);
+// 'propertyName' in object (in 연산자)
+console.log('name' in codeit);
+
 // 객체와 프로퍼티 실습 - 영어 단어장
 let myVoca = {
 	function: '함수',
