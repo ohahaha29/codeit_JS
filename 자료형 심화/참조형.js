@@ -27,3 +27,34 @@ course2.title = '알고리즘의 정석';
 
 console.log(course1);
 console.log(course2);
+
+
+
+// 참조형 복사하기 실습 - 레시피 만들기
+let espresso = ['espresso'];
+
+let americano = espresso.slice();
+americano.push('water');
+
+let caffeLatte = espresso.slice();
+caffeLatte.push('milk');
+
+let caffeMocha = espresso.slice();
+caffeMocha.push('milk', 'chocolateSyrup');
+
+let vanillaLatte = espresso.slice();
+vanillaLatte.push('milk', 'vanillaSyrup');
+
+// 테스트 코드
+console.log(espresso);
+console.log(americano);
+console.log(caffeLatte);
+console.log(caffeMocha);
+console.log(vanillaLatte);
+
+// 결과
+// [ 'espresso' ]
+// [ 'espresso', 'water' ]
+// [ 'espresso', 'milk' ]
+// [ 'espresso', 'milk', 'chocolateSyrup' ]
+// [ 'espresso', 'milk', 'vanillaSyrup' ]
