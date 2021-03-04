@@ -44,3 +44,28 @@ console.log(members[3]);
 console.log(members); // 배열에 요소를 삭제하는 방법 -> 완전히 삭제되지 않는다. -> 배열의 메소드를 사용해야한다.
 delete members[4];
 console.log(members);
+
+
+// array 다루기 실습 - 온도 바꾸기
+let celsiusTemps = [27, 25, 26, 22, 28, 27, 21];
+let fahrenheitTemps = []
+
+for (let i = 0; i < celsiusTemps.length; i++) { // 반복문을 이용해서 celsius 배열의 요소를 하나씩 확인
+    fahrenheitTemps[i] = (celsiusTemps[i] * 9 / 5) + 32 // F = (C * 9 / 5) + 32 라는 공식에 따라서 각 요소의 값을 변환
+}
+
+// fahrenheitTemps 테스트
+console.log(fahrenheitTemps);
+
+// 혹은
+let celsiusTemps = [27, 25, 26, 22, 28, 27, 21];
+let fahrenheitTemps = []
+
+let i = 0;
+while (i < celsiusTemps.length) {
+    fahrenheitTemps[i] = (celsiusTemps[i] * 9 / 5) + 32
+    i++;
+}
+
+// fahrenheitTemps 테스트
+console.log(fahrenheitTemps);
