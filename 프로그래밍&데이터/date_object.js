@@ -44,3 +44,18 @@ console.log(timeDiff / 1000 / 60 / 60 + '시간');
 
 
 // getDate는 일자, getDay는 요일(일요일 부터 0~6까지)
+
+
+// Date 객체 실습
+let today = new Date(2112, 8, 24);
+let jaeSangStart = new Date(2109, 7, 1);
+
+function workDayCalc(startDate) {
+
+    let timeDiff = today.getTime() - startDate.getTime();
+    let dayDiff = timeDiff / 1000 / 60 / 60 / 24;
+
+    console.log(`오늘은 입사한 지 ${dayDiff + 1}일째 되는 날 입니다.`);
+}
+
+workDayCalc(jaeSangStart);
