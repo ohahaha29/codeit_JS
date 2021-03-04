@@ -47,3 +47,18 @@ console.log(Math.random()); // -> 0.21458369059793236
 console.log(Math.random()); // -> 0.6622040803059857
 console.log(Math.random()); // -> 0.785172717569619
 console.log(Math.random()); // -> 0.9056556038884926
+
+
+// math 객체 실습 - 이자 계산기
+function interestCalculator(rate, payment, term) {
+    let interest = +(payment * term * (term + 1) / 2 * rate / 12).toFixed();
+    // 이자 금액은 다음과 같은 식으로 계산
+    // interest = 월 납입금 * 납입 개월 수 * (납입 개월 수+1) / 2 * 이자율 / 12
+    console.log(interest);
+}
+
+// 이율이 4.3%일 때 매월 80만원씩 24개월 납입할 경우 -> 860000
+interestCalculator(0.043, 800000, 24);
+
+// 이율이 4.3%일 때 매월 60만원씩 24개월 납입할 경우 -> 645000
+interestCalculator(0.043, 600000, 24);
