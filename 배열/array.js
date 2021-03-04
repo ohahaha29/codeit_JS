@@ -8,3 +8,19 @@ let courseRanking = [
 
 // indexing(0~...)
 console.log(courseRanking[0]);
+
+
+// 배열 실습
+let dataType = ['Number', 'String', 'Boolean', 'null', 'undefined', 'object'];
+
+for (let i = 0; i < 6; i++) {
+    console.log(dataType[i]);
+}
+
+let dataType = ['Number', 'String', 'Boolean', 'null', 'undefined', 'object'];
+
+let i = 0;
+while (i < 6) {
+    console.log(dataType[i]);
+    i++;
+}
