@@ -24,3 +24,23 @@ while (i < 6) {
     console.log(dataType[i]);
     i++;
 }
+
+
+// 배열 다루기 -> 배열도 객체이다.
+let members = ['쿤갈레', 'zerrard66', '우리생각해써', '흙토끼', 'End Miracle'];
+
+console.log(typeof members);
+
+console.log(members.length); // 배열 안에 몇 개의 데이터가 들어있는지
+console.log(members['length']); // 대괄호 표기법
+console.log(members[length -1]); // 인덱스는 0부터 시작하니간 members에 length -1하면 배열의 마지막 요소에 접근
+
+members[5] = 'NiceCodeit' // 배열에 요소를 추가하는 방법
+console.log(members[5]);
+
+members[3] = '달토끼' // 배열에 요소를 수정하는 방법
+console.log(members[3]);
+
+console.log(members); // 배열에 요소를 삭제하는 방법 -> 완전히 삭제되지 않는다. -> 배열의 메소드를 사용해야한다.
+delete members[4];
+console.log(members);
